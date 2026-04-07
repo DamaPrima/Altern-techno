@@ -400,13 +400,13 @@ body {
     height: auto;
     margin: 120px 0;
   }
-  body .digital .digital-container .digital-content .tovar {
-    background-image: url(images/tovar1.jpg);
+  body .digital .digital-container .digital-content .tovar img {
+    /* background-image: url(images/tovar1.jpg);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
-    width: 60%;
-    height: 470px;
+    background-size: auto 100%; */
+    width: 400px;
+    height: 600px;
   }
   body .digital .digital-container .digital-content p {
     font-family: 'Inter';
@@ -733,13 +733,10 @@ body {
     height: auto;
     margin: 50px 0;
   }
-  body .digital .digital-container .digital-content .tovar {
-    background-image: url(images/tovar1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 470px;
+  body .digital .digital-container .digital-content .tovar img {
+  
+  width: 100%;
+    /* height: 470px; */
   }
   body .digital .digital-container .digital-content p {
     width: 100%;
@@ -1057,13 +1054,9 @@ body {
     height: auto;
     margin: 50px 0;
   }
-  body .digital .digital-container .digital-content .tovar {
-    background-image: url(images/tovar1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  body .digital .digital-container .digital-content .tovar img{
     width: 100%;
-    height: 470px;
+    /* height: 470px; */
   }
   body .digital .digital-container .digital-content p {
     width: 100%;
