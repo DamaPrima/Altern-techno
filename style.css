@@ -6,6 +6,7 @@ html {
 .text-regular {
   font-family: "Inter", serif;
   font-size: clamp(16px, 2vw, 24px);
+  text-wrap: balance;
 }
 .text-sem {
   font-family: "Inter", serif;
@@ -25,6 +26,28 @@ hr {
 body {
   background-color: #FFFCF9;
   margin: 0;
+}
+a[href^="tel:"],
+a[href^="mailto:"] {
+  color: #FFFCF9;
+  text-decoration: none;
+}
+a[href^="tel:"]:hover,
+a[href^="mailto:"]:hover {
+  text-decoration: underline;
+}
+header a[href^="tel:"],
+header a[href^="mailto:"] {
+  color: #1C2844;
+}
+body footer .footer-container a[href^="tel:"],
+body footer .footer-container a[href^="mailto:"] {
+  color: #FFFCF9;
+  filter: none;
+}
+body footer .footer-container a[href^="tel:"] .icon,
+body footer .footer-container a[href^="mailto:"] .icon {
+  filter: invert();
 }
 @media (min-width: 1440px){
   header{
@@ -80,11 +103,18 @@ body {
     width: 83%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 5%;
     position: relative;
   }
   body .promo .promo-container h1{
     font-size: 80px;
     font-family: 'inter';
+  }
+  body .promo .promo-container .video{
+        display: flex;
+    justify-content: flex-end;
+}
   }
   body .promo .promo-container .video .promo-media .background-triangle{
     position: absolute;
@@ -400,13 +430,13 @@ body {
     height: auto;
     margin: 120px 0;
   }
-  body .digital .digital-container .digital-content .tovar img {
-    /* background-image: url(images/tovar1.jpg);
+  body .digital .digital-container .digital-content .tovar {
+    background-image: url(images/tovar1.jpg);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: auto 100%; */
-    width: 400px;
-    height: 600px;
+    background-size: cover;
+    width: 60%;
+    height: 470px;
   }
   body .digital .digital-container .digital-content p {
     font-family: 'Inter';
@@ -733,10 +763,13 @@ body {
     height: auto;
     margin: 50px 0;
   }
-  body .digital .digital-container .digital-content .tovar img {
-  
-  width: 100%;
-    /* height: 470px; */
+  body .digital .digital-container .digital-content .tovar {
+    background-image: url(images/tovar1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 470px;
   }
   body .digital .digital-container .digital-content p {
     width: 100%;
@@ -1054,9 +1087,13 @@ body {
     height: auto;
     margin: 50px 0;
   }
-  body .digital .digital-container .digital-content .tovar img{
+  body .digital .digital-container .digital-content .tovar {
+    background-image: url(images/tovar1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
-    /* height: 470px; */
+    height: 470px;
   }
   body .digital .digital-container .digital-content p {
     width: 100%;
@@ -1119,4 +1156,4 @@ svg{
   margin-right: 10px;
     width: 30px;
     height: 30px;
-}
+}s
