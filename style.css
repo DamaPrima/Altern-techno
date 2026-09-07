@@ -81,9 +81,10 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
+align-items: center;
   }
   body .promo .promo-container h1{
-    font-size: 80px;
+    font-size: 55px;
     font-family: 'inter';
   }
   body .promo .promo-container .video .promo-media .background-triangle{
@@ -236,6 +237,8 @@ body {
     grid-row: 1/3;
     height: calc(100% + 150px);
     margin-top: -75px;
+            max-width: 450px;
+
   }
   body .about_us .about_us-container .second .second-text {
     background-color: #FF824D;
@@ -244,7 +247,7 @@ body {
     z-index: 2;
     border-radius: 25px;
     margin-bottom: -200px;
-    min-height: 900px;
+min-height: 1070px;
   }
   body .about_us .why_me {
     grid-column: 3;
@@ -255,6 +258,7 @@ body {
     padding: 40px;
     height: 90%;
     border-radius: 25px;
+    width: 650px;
   }
   body .about_us .why_me h2 {
     font-size: clamp(32px, 3vw, 40px);
@@ -292,6 +296,10 @@ body {
     background-color: #FF824D;
     padding: 7.5px;
     border-radius: 5px;
+  }
+    body .about_us .why_me .about_us_why_me_item svg {
+    width: 70px;
+    height: 60px;
   }
   body .brands .brands_list {
     display: flex;
@@ -425,7 +433,7 @@ body {
     justify-content: center;
     align-items: start;
     width: 100%;
-    height: 270px;
+    height: 200px;
     padding: 0;
   }
   body footer .footer-container{
@@ -434,9 +442,12 @@ body {
     justify-content: space-around;
     width: 83%;
     border-top: 4px solid #FF824D;
+    align-items: center;
   }
   body footer .footer-container div{
     display: flex;
+    flex-direction: column;
+      align-items: end;
   }
   body footer .footer-container div a{
     filter: invert();
@@ -459,6 +470,7 @@ body {
     margin-left: 10px;
     font-family: 'Inter';
     font-size: clamp(16px, 20px, 24px);
+            text-align: end;
   }
 }
 @media (max-width: 1439px) and (min-width: 768px){
@@ -1091,6 +1103,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+  
   }
   body footer .footer-container div a{
     filter: invert();
@@ -1115,8 +1128,8 @@ body {
   }
 }
 
-svg{
+/* svg{
   margin-right: 10px;
     width: 30px;
     height: 30px;
-}
+} */
