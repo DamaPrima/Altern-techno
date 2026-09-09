@@ -668,7 +668,8 @@ body footer .footer-container .telephone a:last-child {
     min-height: 550px;
   }
   body .about_us .left-col .image {
-    margin-left: 63px;
+    margin-left: auto;
+    margin-right:0;
   }
   body .about_us .left-col .image,
   body .about_us .right-col .image {
